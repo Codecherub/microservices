@@ -4,29 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>microservice</title>
+    <style>
+        td{
+            border:1px solid #888 !important;
+            padding: 5px;
+            }
+            table{
+                border-spacing: 5px;
+                border-collapse: separate;
+            }
+            input,textarea,button{
+                display: block;
+                margin: 5px;
+                padding: 5px;
+            }
+    </style>
 </head>
 <body>
     <h3>user profile / cart Items / </h3>
 
-    <button>Get User profile details</button>
+    <div>
+        <h3>profile</h3>
+        <table>
+            <tbody>
+                <tr>
+                    <td >user name</td>
+                    <td class="userName">John doe</td>
+                </tr>
+                <tr>
+                    <td>user email</td>
+                    <td class="userEmail">john@mail.com</td>
+                </tr>
+                <tr>
+                    <td>cart</td>
+                    <td class="userCart">1cup, 2 spoons 2 cutleries</td>
+                </tr>
+            </tbody>
+        </table>
 
-    <button>get user cart items</button>
+        </div>
 
     <!-- change profile details -->
+    <h3>profile</h3>
     <form id='profile'>
-        <input id="name" placeholder="name">
-        <input id="email" placeholder="email">
-        <button type="submit">change</button>
-    </form>
-
-    <pre>
-
-
-
-    </pre>
- <!-- change cart details -->
-    <form id='profile'>
-        <textarea id="cart">cart items</textarea>
+        <input id="name" name="action" placeholder="name">
+        <input id="email" name="email" placeholder="email">
+        <textarea rows="4" name="cart" id="cart">cart items</textarea>
         <button type="submit">change</button>
     </form>
 

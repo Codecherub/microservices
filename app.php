@@ -1,4 +1,6 @@
 <?php session_start();
+
+//choose which service to call based on server request
 switch ($_POST['action']) {
 
     case 'getUserData':
